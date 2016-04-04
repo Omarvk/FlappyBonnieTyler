@@ -45,11 +45,10 @@ window.Pillar = (function() {
 	};
 	Pillar.prototype.randomGap = function() {
 		this.topHeight = Math.floor((Math.random() * (this.game.WORLD_HEIGHT - 10)) - gap);
-		if(this.topHeight < 0) {
+		if(this.topHeight < 10) {
 			this.topHeight = 10;
 		}
 		this.botHeight = this.game.WORLD_HEIGHT - (this.topHeight + gap);
-		console.log(this.topHeight +' '+ this.botHeight);
 		$('.upPillar' + this.id).height(this.topHeight + 'em');
 		$('.downPillar' + this.id).height(this.botHeight + 'em');
 	};

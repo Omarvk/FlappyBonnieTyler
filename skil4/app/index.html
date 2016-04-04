@@ -24,9 +24,17 @@
             glyphicon glyphicon-volume-up
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <audio id="themeSong" autoplay="autoplay">
+            <source src="audio/The Dark Game Of Hobbit Knight Thrones.mp3" />
+        </audio>
+        <audio id="fly">
+            <source src="#" />
+        </audio>
+        <audio id="dead">
+            <source src="#" />
+        </audio>
         <div class="GameCanvas">
-            <a href="#" class="glyphicon glyphicon-volume-off"></a>
+            <a href="#" id="mute" class="glyphicon glyphicon-volume-off"></a>
             <p id="score">0</p>
             <div class="Player">
                  <div class="Player-wings"></div>
@@ -53,6 +61,7 @@
                     <span class="Scoreboard-restartText">Restart</span>
                 </button>
             </div>
+            <div class="background-img"></div>
         </div>
 
         <!-- build:js scripts/vendor.js -->
@@ -69,6 +78,7 @@
         <script src="scripts/player.js"></script>
         <script src="scripts/utils.js"></script>
         <script src="scripts/pillar.js"></script>
+        <script src="scripts/audio.js"></script>
         <!-- endbuild -->
 </body>
 </html>

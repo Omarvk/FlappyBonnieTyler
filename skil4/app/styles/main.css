@@ -145,33 +145,34 @@
 	cursor: pointer;
 }
 .Scoreboard-restartText {
-font-family: 'Comic Sans MS', serif;
-font-size: 2.4em;
-color: white;
+	font-family: 'Comic Sans MS', serif;
+	font-size: 2.4em;
+	color: white;
 }
 body {
-background: black;
+	background: black;
 }
 .browsehappy {
-margin: 0.2em 0;
-background: ?#?ccc?;
-color: #000;
-padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: ?#?ccc?;
+	color: #000;
+	padding: 0.2em 0;
 }
 .GameCanvas {
-font-size: 10px;
-position: absolute;
-left: 50%;
-top: 50%;
-width: 102.4em;
-height: 57.6em;
-margin-left: -51.2em;
-margin-top: -28.8em;
-overflow: hidden;
-background: blue;
+	font-size: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 102.4em;
+	height: 57.6em;
+	margin-left: -51.2em;
+	margin-top: -28.8em;
+	overflow: hidden;
+	/*background: red; */
 }
 
 #score {
+	z-index: 9999;
 	position: absolute;
 	width: 100%;
 	left: 0;
@@ -192,8 +193,33 @@ background: blue;
 }
 
 .glyphicon {
+	z-index: 9999;
 	position: absolute;
 	top: 0em;
 	left: 1em;
 	font-size: 2.5em;
+}
+
+.background-img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 400%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+	background-repeat: repeat-x;
+	background: url('/images/teppi.jpg');
+	background-size: contain;
+	-webkit-animation: moveCarpet 40s linear infinite;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+@-webkit-keyframes moveCarpet {
+   from { 
+   		-webkit-transform: translate3d(0,0,0);
+   	}
+    to { 
+    	-webkit-transform: translate3d(-100em,0,0);
+    }
 }
