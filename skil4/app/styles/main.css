@@ -31,7 +31,8 @@
 	top: 0;
     width: 5em;
     height: 57.6em;
-	background: green;
+    background: url(/images/fans.png);
+    background-size: cover; 
 	transform: translateZ(0);
 }
 
@@ -40,7 +41,8 @@
     bottom: 0; 
     width: 5em;
     height: 57.6em;
-    background: green;
+    background: url(/images/fans.png);
+    background-size: cover; 
     transform: translateZ(0);
 }
 
@@ -50,7 +52,8 @@
     top: 0;
     width: 5em;
     height: 57.6em;
-    background: green;
+	background: url(/images/fans.png);
+    background-size: cover; 
     transform: translateZ(0);
 }
 
@@ -59,7 +62,8 @@
     bottom: 0; 
     width: 5em;
     height: 57.6em;
-    background: green;
+    background: url(/images/fans.png);
+    background-size: cover; 
     transform: translateZ(0);
 }
 .upPillar3 {
@@ -67,7 +71,8 @@
     top: 0;
     width: 5em;
     height: 57.6em;
-    background: green;
+    background: url(/images/fans.png);
+    background-size: cover; 
     transform: translateZ(0);
 }
 
@@ -76,7 +81,8 @@
     bottom: 0; 
     width: 5em;
     height: 57.6em;
-    background: green;
+    background: url(/images/fans.png);
+    background-size: cover; 
     transform: translateZ(0);
 }
 
@@ -209,13 +215,34 @@ body {
 	overflow: hidden;
 	z-index: -1;
 	background-repeat: repeat-x;
-	background: url('/images/teppi.jpg');
+	background: url('/images/starworld.jpg');
 	background-size: contain;
 	-webkit-animation: moveCarpet 40s linear infinite;
 	-webkit-transform: translate3d(0,0,0);
 }
 
 @-webkit-keyframes moveCarpet {
+   from { 
+   		-webkit-transform: translate3d(0,0,0);
+   	}
+    to { 
+    	-webkit-transform: translate3d(-80em,0,0);
+    }
+}
+
+.ground-img {
+	position: absolute;
+	top: 95%;
+	left:0;
+	width: 400%;
+	height: 3em;
+	background: url('/images/teppi.jpg');
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-animation: moveGround 5s infinite linear;
+
+}
+
+@-webkit-keyframes moveGround {
    from { 
    		-webkit-transform: translate3d(0,0,0);
    	}

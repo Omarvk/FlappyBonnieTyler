@@ -16,6 +16,7 @@ window.Game = (function() {
 		this.pillar1 = new window.Pillar(this.el.find('.Pillar2'), this, 2);
 		this.pillar2 = new window.Pillar(this.el.find('.Pillar3'), this, 3);
 		this.audio = document.getElementById('themeSong');
+		this.deadAudio = document.getElementById('dead');
 		this.score = 0;
 		//this.el.append(this.pillar);
 		this.isPlaying = false;
@@ -72,6 +73,8 @@ window.Game = (function() {
 	 * Resets the state of the game so a new game can be started.
 	 */
 	Game.prototype.reset = function() {
+		this.deadAudio.pause();
+		this.deadAudio.currentTime = 0;
 		this.score = 0;
 		$('#score').text(this.score);
 		this.player.reset();
@@ -87,6 +90,7 @@ window.Game = (function() {
 	Game.prototype.gameover = function() {
 		this.isPlaying = false;
 		this.audio.pause();
+		this.deadAudio.play();
 		// Should be refactored into a Scoreboard class.
 		$('#scoreOnBoard').text('Score: ' + this.score);
 

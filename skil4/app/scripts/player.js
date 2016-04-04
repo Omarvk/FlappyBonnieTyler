@@ -16,6 +16,7 @@ window.Player = (function() {
 		this.game = game;
 		this.pos = { x: 0, y: 0 };
 		this.rotate = 0;
+		this.flyAudio = document.getElementById('fly');
 	};
 
 	/**
@@ -41,8 +42,8 @@ window.Player = (function() {
 		}*/
 		this.pos.y += delta * (SPEED - 10);
 		if (Controls.keys.space || Controls.mouse.mouseclick) {
-			//this.el.css('transform', 'rotate(-20deg)');
-			//this.rotate = -20;
+			this.flyAudio.pause();
+			this.flyAudio.play();
 			if(this.rotate > -20) {
 				this.rotate -= 10;
 			}
