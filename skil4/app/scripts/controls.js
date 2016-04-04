@@ -13,6 +13,9 @@ window.Controls = (function() {
         40: 'down'
     };
 
+    var MOUSE = {
+        0: 'mouseclick'
+    };
     /**
      * A singleton class which abstracts all player input,
      * should hide complexity of dealing with keyboard, mouse
@@ -22,9 +25,11 @@ window.Controls = (function() {
     var Controls = function() {
         this._didJump = false;
         this.keys = {};
+        this.mouse = {};
         $(window)
             .on('keydown', this._onKeyDown.bind(this))
-            .on('keyup', this._onKeyUp.bind(this));
+            .on('keyup', this._onKeyUp.bind(this))
+            .on('onmousedown', this.click.bind(this));
     };
 
     Controls.prototype._onKeyDown = function(e) {
@@ -49,6 +54,16 @@ window.Controls = (function() {
         }
     };
 
+    Controls.prototype.click = function(e) {
+        if(e.mouseclick === 0) {
+            this._didJump = true;
+        }
+        if(e.mouseclick in MOUSE) {
+            var mouseName = MOUSE[e.mouseclick];
+            this.mouse[mouseName] = true;
+            return false;
+        }
+    };
     /**
      * Only answers true once until a key is pressed again.
      */

@@ -12,22 +12,43 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
         <!-- endbuild -->
     </head>
     <body>
         <!--[if lt IE 10]>
+            glyphicon glyphicon-volume-up
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <div class="GameCanvas">
-            <div class="Player"></div>
+            <a href="#" class="glyphicon glyphicon-volume-off"></a>
+            <p id="score">0</p>
+            <div class="Player">
+                 <div class="Player-wings"></div>
+            </div>
+            
+            <div class="Pillar1">
+                <div class="upPillar1"></div>
+                <div class="downPillar1"></div>
+            </div>
+
+             <div class="Pillar2">
+                <div class="upPillar2"></div>
+                <div class="downPillar2"></div>
+            </div>
+
+            <div class="Pillar3">
+                <div class="upPillar3"></div>
+                <div class="downPillar3"></div>
+            </div>
             
             <div class="Scoreboard">
+                <p id="scoreOnBoard">Score: 0</p>
                 <button class="Scoreboard-restart">
                     <span class="Scoreboard-restartText">Restart</span>
                 </button>
@@ -37,6 +58,7 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -46,6 +68,7 @@
         <script src="scripts/game.js"></script>
         <script src="scripts/player.js"></script>
         <script src="scripts/utils.js"></script>
+        <script src="scripts/pillar.js"></script>
         <!-- endbuild -->
 </body>
 </html>

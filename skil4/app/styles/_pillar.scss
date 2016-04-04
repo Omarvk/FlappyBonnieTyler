@@ -1,0 +1,85 @@
+.Pillar1 {
+    // Absolutely position entities at 0,0 and use transform to
+    // move it around.
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: em(50px);
+    height: em(576px);
+
+
+    transform: translateZ(0);
+}
+
+.Pillar2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: em(50px);
+    height: em(576px);
+    transform: translateZ(0);
+
+}
+
+.Pillar3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: em(50px);
+    height: em(576px);
+    transform: translateZ(0);
+}
+
+.upPillar1 {
+	position: absolute;
+	top: em(0px);
+	width: em(50px);
+	height: em(138px);
+	background: green;
+	transform: translateZ(0);
+}
+
+.downPillar1 {
+    position: absolute;
+    bottom: em(0px);  
+    width: em(50px);
+    height: em(288px);
+    background: green;
+    transform: translateZ(0);
+}
+
+
+.upPillar2 {
+    position: absolute;
+    top: em(0px);
+    width: em(50px);
+    height: em(138px);
+    background: green;
+    transform: translateZ(0);
+}
+
+.downPillar2 {
+    position: absolute;
+    bottom: em(0px);  
+    width: em(50px);
+    height: em(288px);
+    background: green;
+    transform: translateZ(0);
+}
+.upPillar3 {
+    position: absolute;
+    top: em(0px);
+    width: em(50px);
+    height: em(138px);
+    background: green;
+    transform: translateZ(0);
+}
+
+.downPillar3 {
+    position: absolute;
+    bottom: em(0px);  
+    width: em(50px);
+    height: em(288px);
+    background: green;
+    transform: translateZ(0);
+}
