@@ -86,10 +86,11 @@
 	left: 0;
 	width: 5em;
 	height: 5em;
-	background-image: url(../images/Bonnie.gif);
+	/*background: blue;*/
+	background-image: url(../images/bonnie.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: center;
 	transform: translateZ(0);
 }
 /*
