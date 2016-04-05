@@ -210,7 +210,8 @@ body {
 }
 
 .glyphicon {
-	z-index: 9999;
+	z-index: !important;
+	color: red;
 	position: absolute;
 	top: 0em;
 	left: 1em;
