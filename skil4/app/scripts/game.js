@@ -46,10 +46,11 @@ window.Game = (function() {
 		this.lastFrame = now;
 
 		// Update game entities.
-		this.player.onFrame(delta);
+		
 		this.pillar.onFrame(delta);
 		this.pillar1.onFrame(delta);
 		this.pillar2.onFrame(delta);
+		this.player.onFrame(delta);
 
 		// Request next frame.
 		window.requestAnimationFrame(this.onFrame);

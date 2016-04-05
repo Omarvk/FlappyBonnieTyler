@@ -60,6 +60,7 @@ window.Player = (function() {
 			this.pos.y + HEIGHT > this.game.WORLD_HEIGHT) {
 			return this.game.gameover();
 		}
+		
 		this.game.pillar.checkCollision();
 		this.game.pillar1.checkCollision();
 		this.game.pillar2.checkCollision();
