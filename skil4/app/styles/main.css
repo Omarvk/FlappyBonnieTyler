@@ -93,7 +93,7 @@
 	width: 5em;
 	height: 5em;
 	/*background: blue; */
-	background-image: url(/images/bonnie_v3.png);
+	background-image: url(/images/bonnie_hobb_v4.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -152,7 +152,7 @@
 	cursor: pointer;
 }
 .Scoreboard-restartText {
-	font-family: 'Comic Sans MS', serif;
+	font-family: "Electrolize", serif;
 	font-size: 2.4em;
 	color: white;
 }
@@ -187,7 +187,7 @@ body {
 	text-align: center;
 	font-size: 400%;
 	font-weight: 700;
-	font-family: 'Helvetica';
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #scoreOnBoard {
@@ -195,9 +195,15 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 2.5em;
 	color: white;
-	margin-top: 3em;
-	margin-right: 6em;
-	left: 3em;
+	top: 3em;
+	left: 38%;
+}
+
+#bonniePic {
+	position: absolute;
+	top: 0em;
+	left: 0em;
+	padding: 2em;
 }
 
 .glyphicon {
