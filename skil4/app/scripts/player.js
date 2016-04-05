@@ -28,18 +28,6 @@ window.Player = (function() {
 	};
 
 	Player.prototype.onFrame = function(delta) {
-		/*if (Controls.keys.right) {
-			this.pos.x += delta * SPEED;
-		}
-		if (Controls.keys.left) {
-			this.pos.x -= delta * SPEED;
-		}
-		if (Controls.keys.down) {
-			this.pos.y += delta * SPEED;
-		}
-		if (Controls.keys.up) {
-			this.pos.y -= delta * SPEED;
-		}*/
 		this.pos.y += delta * (SPEED - 10);
 		if (Controls.keys.space || Controls.mouse.mouseclick) {
 			this.flyAudio.pause();
@@ -52,11 +40,15 @@ window.Player = (function() {
 			}else {
 				this.pos.y -= delta * SPEED * 2;
 			}
+			
+			this.el.css('background-image', 'url(/images/bonnie_hobb_v4.png)');
 		}
 		if(this.rotate < 90) {
 			this.rotate += 2;
 		}
-		
+		if(this.rotate > 60) {
+			this.el.css('background-image', 'url(/images/bonnie_v3.png)');
+		}
 		this.checkCollisionWithBounds();
 		// Update UI
 		this.el.css('transform', 'translateZ(0) translate(' + this.pos.x + 'em, ' + this.pos.y + 'em) rotate('+ this.rotate +'deg)');
