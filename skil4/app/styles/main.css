@@ -199,7 +199,7 @@ body {
 }
 
 #score {
-	z-index: 9999 !important;
+	z-index: !important;
 	position: absolute;
 	width: 100%;
 	left: 0;
