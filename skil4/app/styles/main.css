@@ -31,7 +31,7 @@
 	top: 0;
     width: 5em;
     height: 57.6em;
-    background: url(/images/fans.png);
+    background: url(/images/fans_v2.png);
     background-size: cover; 
 	transform: translateZ(0);
 }
@@ -41,7 +41,7 @@
     bottom: 0; 
     width: 5em;
     height: 57.6em;
-    background: url(/images/fans.png);
+    background: url(/images/fans_v2.png);
     background-size: cover; 
     transform: translateZ(0);
 }
@@ -52,7 +52,7 @@
     top: 0;
     width: 5em;
     height: 57.6em;
-	background: url(/images/fans.png);
+	background: url(/images/fans_v2.png);
     background-size: cover; 
     transform: translateZ(0);
 }
@@ -62,7 +62,7 @@
     bottom: 0; 
     width: 5em;
     height: 57.6em;
-    background: url(/images/fans.png);
+    background: url(/images/fans_v2.png);
     background-size: cover; 
     transform: translateZ(0);
 }
@@ -71,7 +71,7 @@
     top: 0;
     width: 5em;
     height: 57.6em;
-    background: url(/images/fans.png);
+    background: url(/images/fans_v2.png);
     background-size: cover; 
     transform: translateZ(0);
 }
@@ -81,7 +81,7 @@
     bottom: 0; 
     width: 5em;
     height: 57.6em;
-    background: url(/images/fans.png);
+    background: url(/images/fans_v2.png);
     background-size: cover; 
     transform: translateZ(0);
 }
@@ -92,8 +92,8 @@
 	left: 0;
 	width: 5em;
 	height: 5em;
-	/*background: blue;*/
-	background-image: url(../images/bonnie.png);
+	/*background: blue; */
+	background-image: url(/images/bonnie_v3.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -179,7 +179,7 @@ body {
 }
 
 #score {
-	z-index: 9999;
+	z-index: 9999 !important;
 	position: absolute;
 	width: 100%;
 	left: 0;
@@ -187,6 +187,7 @@ body {
 	text-align: center;
 	font-size: 400%;
 	font-weight: 700;
+	font-family: 'Helvetica';
 }
 
 #scoreOnBoard {
@@ -216,7 +217,7 @@ body {
 	overflow: hidden;
 	z-index: -1;
 	background-repeat: repeat-x;
-	background: url('/images/starworld.jpg');
+	background: url('/images/fans.jpg');
 	background-size: contain;
 	-webkit-animation: moveCarpet 40s linear infinite;
 	-webkit-transform: translate3d(0,0,0);
