@@ -199,7 +199,7 @@ body {
 }
 
 #score {
-	z-index: !important;
+	z-index: 4 !important;
 	position: absolute;
 	width: 100%;
 	left: 0;
@@ -219,6 +219,15 @@ body {
 	left: 38%;
 }
 
+#highScore {
+	position: absolute;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	color: white;
+	top: 2em;
+	left: 38%;
+}
+
 #bonniePic {
 	position: absolute;
 	top: 0em;
@@ -227,7 +236,7 @@ body {
 }
 
 .glyphicon {
-	z-index: !important;
+	z-index: 4 !important;
 	color: red;
 	position: absolute;
 	top: 0em;

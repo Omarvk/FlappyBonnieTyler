@@ -17,6 +17,7 @@ window.Game = (function() {
 		this.pillar2 = new window.Pillar(this.el.find('.Pillar3'), this, 3);
 		this.audio = document.getElementById('themeSong');
 		this.deadAudio = document.getElementById('dead');
+		this.highScore = 0;
 		this.score = 0;
 		//this.el.append(this.pillar);
 		this.isPlaying = false;
@@ -92,6 +93,10 @@ window.Game = (function() {
 		this.isPlaying = false;
 		this.audio.pause();
 		this.deadAudio.play();
+		if(this.score > this.highScore) {
+			this.highScore = this.score;
+			$('#highScore').text('HighScore: ' + this.highScore);
+		}
 		// Should be refactored into a Scoreboard class.
 		$('#scoreOnBoard').text('Score: ' + this.score);
 
