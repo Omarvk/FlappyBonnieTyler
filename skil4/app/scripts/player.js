@@ -41,13 +41,13 @@ window.Player = (function() {
 				this.pos.y -= delta * SPEED * 2;
 			}
 			
-			this.el.css('background-image', 'url(/images/bonnie_hobb_v4.png)');
+			this.el.css('background-image', 'url(/images/bonnie_hobb_v5.png)');
 		}
 		if(this.rotate < 90) {
 			this.rotate += 2;
 		}
 		if(this.rotate > 60) {
-			this.el.css('background-image', 'url(/images/bonnie_v3.png)');
+			this.el.css('background-image', 'url(/images/bonnie_v4.png)');
 		}
 		this.checkCollisionWithBounds();
 		// Update UI
