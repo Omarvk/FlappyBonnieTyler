@@ -88,6 +88,7 @@
 
 .Player {
 	position: absolute;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 5em;
@@ -124,6 +125,7 @@
 
 .Scoreboard {
 	position: absolute;
+	z-index: 2;
 	left: 50%;
 	top: 10em;
 	height: 30em;

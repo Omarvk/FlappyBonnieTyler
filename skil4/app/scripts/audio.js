@@ -7,3 +7,4 @@ document.getElementById('mute').addEventListener('click', function (e)	{
     audio.muted = !audio.muted;
     e.preventDefault();
 }, false);
+
