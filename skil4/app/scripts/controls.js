@@ -29,7 +29,8 @@ window.Controls = (function() {
         $(window)
             .on('keydown', this._onKeyDown.bind(this))
             .on('keyup', this._onKeyUp.bind(this))
-            .on('onmousedown', this.click.bind(this));
+            .on('mousedown', this._onClickDown.bind(this))
+            .on('mouseup', this._onClickUp.bind(this));
     };
 
     Controls.prototype._onKeyDown = function(e) {
@@ -54,13 +55,20 @@ window.Controls = (function() {
         }
     };
 
-    Controls.prototype.click = function(e) {
-        if(e.mouseclick === 0) {
+    Controls.prototype._onClickDown = function(e) {
+        if(e.button === 0) {
             this._didJump = true;
         }
-        if(e.mouseclick in MOUSE) {
-            var mouseName = MOUSE[e.mouseclick];
+        if(e.button in MOUSE) {
+            var mouseName = MOUSE[e.button];
             this.mouse[mouseName] = true;
+            return false;
+        }
+    };
+    Controls.prototype._onClickUp = function(e) {
+        if(e.button in MOUSE) {
+            var mouseName = MOUSE[e.button];
+            this.mouse[mouseName] = false;
             return false;
         }
     };
