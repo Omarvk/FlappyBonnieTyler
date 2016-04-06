@@ -19,7 +19,6 @@ window.Game = (function() {
 		this.deadAudio = document.getElementById('dead');
 		this.highScore = 0;
 		this.score = 0;
-		//this.el.append(this.pillar);
 		this.isPlaying = false;
 		var fontSize = Math.min(
 			window.innerWidth / 102.4,
@@ -83,7 +82,6 @@ window.Game = (function() {
 		this.pillar.reset();
 		this.pillar1.reset();
 		this.pillar2.reset();
-		//this.pillar.row();
 	};
 
 	/**

@@ -40,7 +40,6 @@ window.Pillar = (function() {
 		if(this.pos < 0) {
 			this.randomGap();
 			this.pos = this.game.WORLD_WIDTH;
-			//Math.floor((Math.random() * 20 ) + this.game.WORLD_WIDTH + (10*this.id));
 		}
 	};
 	Pillar.prototype.randomGap = function() {
