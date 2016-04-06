@@ -31,7 +31,7 @@
 	top: 0;
     width: 5em;
     height: 57.6em;
-    background: url(/images/fans_v2.png);
+    background: url(/images/fans.png);
     background-size: cover; 
 	transform: translateZ(0);
 }
@@ -41,7 +41,7 @@
     bottom: 0; 
     width: 5em;
     height: 57.6em;
-    background: url(/images/fans_v2.png);
+    background: url(/images/fans.png);
     background-size: cover; 
     transform: translateZ(0);
 }
@@ -52,7 +52,7 @@
     top: 0;
     width: 5em;
     height: 57.6em;
-	background: url(/images/fans_v2.png);
+	background: url(/images/fans.png);
     background-size: cover; 
     transform: translateZ(0);
 }
@@ -62,7 +62,7 @@
     bottom: 0; 
     width: 5em;
     height: 57.6em;
-    background: url(/images/fans_v2.png);
+    background: url(/images/fans.png);
     background-size: cover; 
     transform: translateZ(0);
 }
@@ -71,7 +71,7 @@
     top: 0;
     width: 5em;
     height: 57.6em;
-    background: url(/images/fans_v2.png);
+    background: url(/images/fans.png);
     background-size: cover; 
     transform: translateZ(0);
 }
@@ -81,7 +81,7 @@
     bottom: 0; 
     width: 5em;
     height: 57.6em;
-    background: url(/images/fans_v2.png);
+    background: url(/images/fans.png);
     background-size: cover; 
     transform: translateZ(0);
 }
@@ -93,7 +93,6 @@
 	left: 0;
 	width: 5em;
 	height: 5em;
-	/*background: blue; */
 	background-image: url(/images/bonnie_v4.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -151,8 +150,6 @@
 	margin-top: 20em;
 	font-size: inherit;
 	padding: 0.4em 1.5em;
-	/*border: 0.2em solid white;
-	background: none;*/
 	cursor: pointer;
 	display: inline-block;
 	text-decoration: none;
@@ -164,7 +161,6 @@
 }
 .Scoreboard-restartText {
 	font-size: 2.4em;
-	/*color: white;*/
 }
 
 .Scoreboard-restart:hover {background-color: #a6a6a6}

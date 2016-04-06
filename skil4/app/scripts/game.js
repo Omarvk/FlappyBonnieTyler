@@ -93,7 +93,7 @@ window.Game = (function() {
 		this.deadAudio.play();
 		if(this.score > this.highScore) {
 			this.highScore = this.score;
-			$('#highScore').text('HighScore: ' + this.highScore);
+			$('#highScore').text('High Score: ' + this.highScore);
 		}
 		// Should be refactored into a Scoreboard class.
 		$('#scoreOnBoard').text('Score: ' + this.score);
