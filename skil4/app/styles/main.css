@@ -133,7 +133,6 @@
 	margin-left: -20em;
 	box-sizing: border-box;
 	background-color: #556270;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGUlEQVQ4y2NgoBJwoJAedcGoC0ZdMOAuAABF0hABJ/8lyQAAAABJRU5ErkJggg==);
 	background-attachment: fixed;
 	text-align: center;
 	-webkit-transform: translate(0, -40em);
@@ -233,6 +232,8 @@ body {
 	top: 0em;
 	left: 0em;
 	padding: 2em;
+	width:14em;
+	height:14em;
 }
 
 .glyphicon {
